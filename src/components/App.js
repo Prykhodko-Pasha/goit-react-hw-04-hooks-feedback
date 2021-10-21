@@ -5,8 +5,6 @@ import Section from './Section/Section';
 import Notification from './Notification/Notification';
 
 export default function Feedback() {
-  // const options = [good, neutral, bad];
-
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -27,9 +25,9 @@ export default function Feedback() {
     }
   };
 
-  let totalFeedbackReacts = good + neutral + bad;
+  const totalFeedbackReacts = good + neutral + bad;
 
-  let positiveFeedbackPercentage = Math.round(
+  const positiveFeedbackPercentage = Math.round(
     (good / totalFeedbackReacts) * 100,
   );
 
@@ -56,10 +54,4 @@ export default function Feedback() {
       </Section>
     </>
   );
-
-  // render() {
-  //   let total = this.countFeedbackReacts();
-  //   const { good, neutral, bad } = this.state;
-
-  // }
 }
