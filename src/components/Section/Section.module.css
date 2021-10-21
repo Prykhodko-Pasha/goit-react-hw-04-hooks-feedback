@@ -1,0 +1,9 @@
+.section {
+  margin: 20px auto;
+  width: 360px;
+}
+
+.section__title {
+  font-size: 33px;
+  padding: 20px 0;
+}
